@@ -85,5 +85,5 @@ Checkout information is organized on one page.
 -   **Color palette:** Deep green, teal, and cream accents
 -   **Design tool:** Figma
 
-Design reference: [GAMESTOB Figma
+Link Figma: [GAMESTOB Figma
 Design](https://www.figma.com/design/SVC3fQcDdUGz4gfLaLbAkx/HCI-LAB?node-id=0-1&t=N6scTo0Mq9GLwcXA-1)
