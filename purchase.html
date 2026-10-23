@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMESTOB - Purchase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Varela+Round&family=Vesper+Libre:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="purchase.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/LOGO-removebg-preview.png" alt="GAMESTOB Logo">
+            <h1>GAMESTOB</h1>
+        </div>
+        
+        <div class="nav-container">
+            <nav>
+                <a href="home.html" class="nav-item">Home</a>
+                <a href="catalog.html" class="nav-item">Catalog</a>
+                <a href="purchase.html" class="nav-item active">Purchase</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="locations.html" class="nav-item">Locations</a>
+            </nav>
+        </div>
+
+        <div class="right-nav">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search games...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cart-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
+            <i class="fa-solid fa-circle-user"></i>
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
+        </div>
+    </header>
+
+    <main class="purchase-container">
+    <h1>PURCHASE</h1>
+    <p>Complete your purchase and start your adventure</p>
+    
+    <div class="purchase-grid">
+        <section class="order-summary">
+            <h2>ORDER SUMMARY</h2>
+            <div id="cart-items"></div>
+            <div class="totals">
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Tax (11%): <span id="tax">$0.00</span></p>
+                <hr>
+                <p>TOTAL: <span id="total">$0.00</span></p>
+            </div>
+        </section>
+        
+        <section class="payment-form">
+            <h2>PAYMENT INFORMATION</h2>
+            <form id="purchase-form">
+                <h3>Billing Details</h3>
+                <input type="text" id="fullName" placeholder="Full Name (6 letters)" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="address" placeholder="Home Address">
+                
+                <div class="input-row">
+                    <div>
+                        <label>City</label>
+                        <input type="text" id="city">
+                    </div>
+                    <div>
+                        <label>State / Province</label>
+                        <input type="text" id="state">
+                    </div>
+                    <div>
+                        <label>Postal Code</label>
+                        <input type="text" id="postal">
+                    </div>
+                </div>
+                
+                <input type="text" id="country" placeholder="Country">
+                <input type="text" id="phone" placeholder="Phone Number (12 digits)">
+                
+                <h3>Payment Method</h3>
+                <input type="text" id="cardHolder" placeholder="Cardholder Name">
+                <input type="text" id="cardNumber" placeholder="Card Number (10 digits)">
+                
+                <div class="row">
+                    <input type="text" id="expiry" placeholder="dd/mm/yyyy">
+                    <input type="text" id="cvv" placeholder="CVV (Last 3)">
+                </div>
+                
+                <button type="submit" id="confirm-btn">Confirm Payment</button>
+            </form>
+        </section>
+    </div>
+    </main>
+
+     <footer>
+        <div class="footer-col">
+            <div class="logo">
+                <img src="images/LOGO-removebg-preview.png" alt="GAMESTOB Logo">
+                <h1>GAMESTOB</h1>
+            </div>
+            <p>Your ultimate destination for games, DLCs, and more. Pay more. Pay less.</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>QUICK LINKS</h2>
+            <div class="footer-links">
+                <a href="catalog.html" class="footer-item">Catalog</a>
+                <a href="about.html" class="footer-item">About Us</a>
+                <a href="purchase.html" class="footer-item">Purchase</a>
+                <a href="locations.html" class="footer-item">Locations</a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>SUPPORT</h2>
+            <div class="footer-links">
+                <span> Privacy </span>
+                <span> Accessibility </span>
+                <span>Terms of Service</span>
+                <span>Refunds</span>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>STAY UPDATED</h2>
+            <p>Subscribe to get the best deals and latest game updates!</p>
+            <div class="newsletter">
+                <input type="email" id="email-input" placeholder="Enter your email...">
+                <button id="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="purchase.js"></script>
+</body>
+</html>

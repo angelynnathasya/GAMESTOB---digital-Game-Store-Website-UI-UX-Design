@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMESTOB - About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Varela+Round&family=Vesper+Libre:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/LOGO-removebg-preview.png" alt="GAMESTOB Logo">
+            <h1>GAMESTOB</h1>
+        </div>
+        
+        <div class="nav-container">
+            <nav>
+                <a href="home.html" class="nav-item">Home</a>
+                <a href="catalog.html" class="nav-item">Catalog</a>
+                <a href="purchase.html" class="nav-item">Purchase</a>
+                <a href="about.html" class="nav-item active">About Us</a>
+                <a href="locations.html" class="nav-item">Locations</a>
+            </nav>
+        </div>
+
+        <div class="right-nav">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search games...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cart-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
+            <i class="fa-solid fa-circle-user"></i>
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
+        </div>
+    </header>
+
+    <main class="about-container">
+        <section class="about-hero">
+            <div class="hero-overlay">
+                <p>GAMESTOB is more than just a marketplace.<br>We are community of gamers, built by gamers, for gamers.</p>
+            </div>
+        </section>
+
+        <h1>ABOUT US</h1>
+        <p class="subtitle">Get to know the team behind your favorite games</p>
+
+        <div class="about-grid">
+            <section class="story-section">
+                <h2>OUR STORY</h2>
+                <div class="divider">◆◆◆◆</div>
+                <p>Founded in 2026, GAMESTOB is built to make discovering, buying, and enjoying the best games easier than ever.</p>
+                <p>We combine an extensive game library, fair prices, and a seamless shopping experience. More than just a store, GAMESTOB connects thousands of players worldwide with exclusive deals and a community that shares the exact same passion.</p>
+            </section>
+
+            <section class="values-section">
+                <h2>OUR VALUES</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>TRUST & SAFETY</h3>
+                        <p>We ensure a secure and reliable platform for every transaction and every user.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-user-group"></i>
+                        <h3>PASSION FOR GAMING</h3>
+                        <p>Gaming is in our DNA. We live and breathe games, just like you do.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3>CUSTOMER FIRST</h3>
+                        <p>Our players are at the heart of everything we do. Your satisfaction drives us.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-gem"></i>
+                        <h3>QUALITY & AUTHENTICITY</h3>
+                        <p>All products are original and authentic.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h3>GROWTH & INNOVATION</h3>
+                        <p>We continue to improve, bring new features, and deliver better experiences.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <div class="logo">
+                <img src="images/LOGO-removebg-preview.png" alt="GAMESTOB Logo">
+                <h1>GAMESTOB</h1>
+            </div>
+            <p>Your ultimate destination for games, DLCs, and more. Pay more. Pay less.</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>QUICK LINKS</h2>
+            <div class="footer-links">
+                <a href="catalog.html" class="footer-item">Catalog</a>
+                <a href="about.html" class="footer-item">About Us</a>
+                <a href="purchase.html" class="footer-item">Purchase</a>
+                <a href="locations.html" class="footer-item">Locations</a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>SUPPORT</h2>
+            <div class="footer-links">
+                <span> Privacy </span>
+                <span> Accessibility </span>
+                <span>Terms of Service</span>
+                <span>Refunds</span>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>STAY UPDATED</h2>
+            <p>Subscribe to get the best deals and latest game updates!</p>
+            <div class="newsletter">
+                <input type="email" id="email-input" placeholder="Enter your email...">
+                <button id="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

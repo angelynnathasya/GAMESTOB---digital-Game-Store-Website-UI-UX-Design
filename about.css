@@ -1,0 +1,87 @@
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #F7F4D5;
+}
+
+.about-hero {
+    height: 300px;
+    background-image: url("images/nature.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background: rgba(16, 86, 102, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #F7F4D5;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+
+h1 { font-family: 'Vesper Libre', serif; text-align: center; margin-bottom: 10px; }
+.subtitle { text-align: center; margin-bottom: 40px; opacity: 0.8; }
+h2 { font-family: 'Vesper Libre', serif; font-size: 22px; margin-bottom: 20px; }
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+}
+
+.story-section, .values-section {
+    background: #105666;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.divider { text-align: center; margin-bottom: 20px; color: #D3968C; letter-spacing: 5px; }
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.value-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgba(247, 244, 213, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.value-card i { 
+    font-size: 30px; 
+    margin-bottom: 15px; 
+    color: #D3968C; 
+}
+
+.value-card h3 { 
+    font-family: 'Vesper Libre', serif; 
+    font-size: 16px; 
+    margin-bottom: 10px; 
+}
+
+.value-card p { 
+    font-family: 'Varela Round', sans-serif; 
+    font-size: 14px; 
+    line-height: 1.5;
+    opacity: 0.8; 
+}
+
+@media screen and (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .about-hero { height: 200px; }
+    .hero-overlay { font-size: 16px; padding: 20px; }
+}

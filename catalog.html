@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMESTOB - Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Varela+Round&family=Vesper+Libre:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/LOGO-removebg-preview.png" alt="GAMESTOB Logo">
+            <h1>GAMESTOB</h1>
+        </div>
+        
+        <div class="nav-container">
+            <nav>
+                <a href="home.html" class="nav-item">Home</a>
+                <a href="catalog.html" class="nav-item active">Catalog</a>
+                <a href="purchase.html" class="nav-item">Purchase</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="locations.html" class="nav-item">Locations</a>
+            </nav>
+        </div>
+
+        <div class="right-nav">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search games...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cart-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
+            <i class="fa-solid fa-circle-user"></i>
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-hero-banner">
+            <div class="banner-overlay"></div>
+            <img src="images/cod2.jpg" alt="Catalog Game Banner" class="banner-img">
+        </section>
+
+        <div class="catalog-container">
+            
+            <aside class="sidebar-filters">
+                <div class="filter-header-main">
+                    FILTERS <i class="fa-solid fa-sliders"></i>
+                </div>
+
+                <div class="filter-group">
+                    <h3>GENRE</h3>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="all" id="genre-all" checked> <span class="checkmark"></span> ALL GENRES
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="ACTION" class="genre-checkbox"> <span class="checkmark"></span> ACTION
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="HORROR" class="genre-checkbox"> <span class="checkmark"></span> HORROR
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="RPG" class="genre-checkbox"> <span class="checkmark"></span> RPG
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="FPS" class="genre-checkbox"> <span class="checkmark"></span> FPS
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="SURVIVAL" class="genre-checkbox"> <span class="checkmark"></span> SURVIVAL
+                    </label>
+                </div>
+
+                <hr class="filter-divider">
+
+                <div class="filter-group options-disabled">
+                    <h3>PLATFORM</h3>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> <i class="fa-solid fa-desktop"></i> PC</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> <i class="fa-brands fa-playstation"></i> PLAYSTATION</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> <i class="fa-brands fa-xbox"></i> Xbox</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> <i class="fa-solid fa-gamepad"></i> Nintendo Switch</label>
+                </div>
+
+                <hr class="filter-divider">
+
+                <div class="filter-group options-disabled">
+                    <h3>RATING</h3>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> ★★★★★</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> ★★★★☆</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> ★★★☆☆</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> ★★☆☆☆</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> ★☆☆☆☆</label>
+                </div>
+
+                <hr class="filter-divider">
+
+                <div class="filter-group options-disabled">
+                    <h3>OTHERS</h3>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> On Sale</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> Pre-Order</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> DLC</label>
+                    <label class="checkbox-container"><input type="checkbox" disabled><span class="checkmark"></span> Bundles</label>
+                </div>
+
+                <div class="filter-buttons">
+                    <button type="button" id="btn-apply" class="btn-applyfilters">Apply Filters</button>
+                    <button type="button" id="btn-reset" class="btn-reset">Reset</button>
+                </div>
+            </aside>
+
+            <section class="catalog-content">
+                <div class="catalog-toolbar">
+                    <span id="items-count" class="meta-count">Showing 0 games</span>
+                    <div class="toolbar-controls">
+                        <label for="sort-select">Sort by: </label>
+                        <select id="sort-select" class="custom-select" disabled>
+                            <option value="popular">Popular</option>
+                        </select>
+                        <div class="view-toggle-icons">
+                            <i class="fa-solid fa-grip-vertical active-view"></i>
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="catalog-grid" class="games-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <div class="logo">
+                <img src="images/LOGO-removebg-preview.png" alt="GAMESTOB Logo">
+                <h1>GAMESTOB</h1>
+            </div>
+            <p>Your ultimate destination for games, DLCs, and more. Pay more. Pay less.</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>QUICK LINKS</h2>
+            <div class="footer-links">
+                <a href="catalog.html" class="footer-item">Catalog</a>
+                <a href="about.html" class="footer-item">About Us</a>
+                <a href="purchase.html" class="footer-item">Purchase</a>
+                <a href="locations.html" class="footer-item">Locations</a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>SUPPORT</h2>
+            <div class="footer-links">
+                <span> Privacy </span>
+                <span> Accessibility </span>
+                <span>Terms of Service</span>
+                <span>Refunds</span>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>STAY UPDATED</h2>
+            <p>Subscribe to get the best deals and latest game updates!</p>
+            <div class="newsletter">
+                <input type="email" id="email-input" placeholder="Enter your email...">
+                <button id="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="catalog.js"></script>
+</body>
+</html>
